@@ -20,7 +20,7 @@ Familia: heap
 **Complejidad.** Para `n = len(nums)`, tiempo `O(n log k)` y espacio extra `O(k)`.
 
 Código: [`kth-largest/solution.py`](kth-largest/solution.py)  
-Evidencia pendiente: `evidencias/kth-largest-accepted.png`
+![Accepted — Kth Largest](evidencias/kth-largest-accepted.jpg)
 
 ## 2. [179. Largest Number](https://leetcode.com/problems/largest-number/)
 
@@ -32,7 +32,7 @@ Familia: ordenamiento con comparador personalizado
 **Complejidad.** Para `n` números y longitud máxima `d`, el ordenamiento realiza `O(n log n)` comparaciones de costo `O(d)`: tiempo `O(d n log n)`. El espacio para las cadenas y el resultado es `O(nd)`; el sort de Python puede requerir además `O(n)` referencias auxiliares.
 
 Código: [`largest-number/solution.py`](largest-number/solution.py)  
-Evidencia pendiente: `evidencias/largest-number-accepted.png`
+![Accepted — Largest Number](evidencias/largest-number-accepted.jpg)
 
 ## 3. [743. Network Delay Time](https://leetcode.com/problems/network-delay-time/)
 
@@ -46,7 +46,7 @@ Familia: grafos — Dijkstra
 **Complejidad.** Con `n` vértices y `m = len(times)` arcos, tiempo `O((n + m) log n)` y espacio `O(n + m)`.
 
 Código: [`network-delay-time/solution.py`](network-delay-time/solution.py)  
-Evidencia pendiente: `evidencias/network-delay-time-accepted.png`
+![Accepted — Network Delay Time](evidencias/network-delay-time-accepted.jpg)
 
 ## 4. [1584. Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)
 
@@ -60,10 +60,10 @@ Familia: grafos — árbol de recubrimiento mínimo (Prim)
 **Complejidad.** Para `n = len(points)`, tiempo `O(n^2)` y espacio extra `O(n)`.
 
 Código: [`min-cost-to-connect-all-points/solution.py`](min-cost-to-connect-all-points/solution.py)  
-Evidencia pendiente: `evidencias/min-cost-to-connect-all-points-accepted.png`
+![Accepted — Min Cost to Connect All Points](evidencias/min-cost-to-connect-all-points-accepted.jpg)
 
-## Evidencias pendientes
+## Evidencias
 
-Después de ejecutar **Submit** en LeetCode, guarde en `evidencias/` una captura por problema. Cada captura debe mostrar el número o título, `Accepted`, todos los casos en `Passed`, runtime/memoria cuando aparezcan y el usuario de LeetCode de Anderson.
+Las capturas muestran el número o título del problema, el resultado `Accepted`, todos los casos aprobados, runtime, memoria y el usuario de LeetCode de Anderson.
 
 
