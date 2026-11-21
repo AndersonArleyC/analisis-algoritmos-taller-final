@@ -9,8 +9,6 @@ Curso: Análisis de algoritmos · ITM · 2026-2
 | Anderson | `AndersonArleyC` | 215, 179, 743, 1584 |
 | José Quirós | `JoseQuiros30` | 72, 300, 134, 79 |
 
-> Antes de entregar, combine este contenido con el `README.md` general del grupo y agregue los demás integrantes.
-
 ## 1. [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 
 Autor: Anderson (`AndersonArleyC`)  
