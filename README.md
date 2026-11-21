@@ -77,7 +77,7 @@ Familia: programación dinámica
 
 Código: [`edit-distance/solution.py`](edit-distance/solution.py)
 
-Evidencia pendiente: `evidencias/edit-distance-accepted.png`
+![Accepted — Edit Distance](evidencias/edit-distance-accepted.png)
 
 ## 6. [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
 
@@ -93,7 +93,7 @@ Familia: programación dinámica
 
 Código: [`longest-increasing-subsequence/solution.py`](longest-increasing-subsequence/solution.py)
 
-Evidencia pendiente: `evidencias/longest-increasing-subsequence-accepted.png`
+![Accepted — Longest Increasing Subsequence](evidencias/longest-increasing-subsequence-accepted.png)
 
 ## 7. [134. Gas Station](https://leetcode.com/problems/gas-station/)
 
@@ -109,7 +109,7 @@ Familia: greedy
 
 Código: [`gas-station/solution.py`](gas-station/solution.py)
 
-Evidencia pendiente: `evidencias/gas-station-accepted.png`
+![Accepted — Gas Station](evidencias/gas-station-accepted.png)
 
 ## 8. [79. Word Search](https://leetcode.com/problems/word-search/)
 
@@ -125,10 +125,10 @@ Familia: backtracking
 
 Código: [`word-search/solution.py`](word-search/solution.py)
 
-Evidencia pendiente: `evidencias/word-search-accepted.png`
+![Accepted — Word Search](evidencias/word-search-accepted.png)
 
 ## Evidencias
 
-Las capturas disponibles de los ejercicios 1 a 4 muestran el número o título del problema, el resultado `Accepted`, todos los casos aprobados, runtime, memoria y el usuario de LeetCode de Anderson. Faltan las capturas de los ejercicios 5 a 8, que deben mostrar el usuario de LeetCode `JoseQuiros30`.
+Las ocho capturas muestran el problema, el resultado `Accepted`, todos los casos aprobados, runtime, memoria y el usuario de LeetCode de la persona autora.
 
 

@@ -1,3 +1,3 @@
 # Evidencias
 
-Agregue aquí las capturas de Accepted de cada ejercicio. Deben mostrar el problema, todos los casos en Passed y el usuario de LeetCode del autor.
+Esta carpeta contiene las capturas de `Accepted` de los ocho ejercicios. Cada imagen muestra el problema, todos los casos aprobados y el usuario de LeetCode de la persona autora.
