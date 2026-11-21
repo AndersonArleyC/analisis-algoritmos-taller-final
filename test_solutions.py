@@ -44,6 +44,49 @@ class TestMinCostConnectPoints(unittest.TestCase):
         self.assertEqual(solution.minCostConnectPoints([[3, 12], [-2, 5], [-4, 1]]), 18)
 
 
+class TestEditDistance(unittest.TestCase):
+    def test_examples_and_empty_words(self):
+        solution = load_solution("edit-distance")
+        self.assertEqual(solution.minDistance("horse", "ros"), 3)
+        self.assertEqual(solution.minDistance("intention", "execution"), 5)
+        self.assertEqual(solution.minDistance("", "abc"), 3)
+        self.assertEqual(solution.minDistance("same", "same"), 0)
+
+
+class TestLongestIncreasingSubsequence(unittest.TestCase):
+    def test_examples_and_strict_order(self):
+        solution = load_solution("longest-increasing-subsequence")
+        self.assertEqual(solution.lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18]), 4)
+        self.assertEqual(solution.lengthOfLIS([0, 1, 0, 3, 2, 3]), 4)
+        self.assertEqual(solution.lengthOfLIS([7, 7, 7, 7]), 1)
+        self.assertEqual(solution.lengthOfLIS([5]), 1)
+
+
+class TestGasStation(unittest.TestCase):
+    def test_possible_and_impossible_circuits(self):
+        solution = load_solution("gas-station")
+        self.assertEqual(solution.canCompleteCircuit([1, 2, 3, 4, 5], [3, 4, 5, 1, 2]), 3)
+        self.assertEqual(solution.canCompleteCircuit([2, 3, 4], [3, 4, 3]), -1)
+        self.assertEqual(solution.canCompleteCircuit([5], [4]), 0)
+
+
+class TestWordSearch(unittest.TestCase):
+    def test_paths_reuse_and_board_restoration(self):
+        solution = load_solution("word-search")
+        board = [
+            ["A", "B", "C", "E"],
+            ["S", "F", "C", "S"],
+            ["A", "D", "E", "E"],
+        ]
+        original = [row[:] for row in board]
+
+        self.assertTrue(solution.exist(board, "ABCCED"))
+        self.assertEqual(board, original)
+        self.assertTrue(solution.exist(board, "SEE"))
+        self.assertFalse(solution.exist(board, "ABCB"))
+        self.assertEqual(board, original)
+
+
 if __name__ == "__main__":
     unittest.main()
 

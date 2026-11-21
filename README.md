@@ -1,4 +1,4 @@
-# Taller final — parte de Anderson
+# Taller final
 
 Curso: Análisis de algoritmos · ITM · 2026-2
 
@@ -7,6 +7,7 @@ Curso: Análisis de algoritmos · ITM · 2026-2
 | Integrante | Usuario de Git | Ejercicios |
 | --- | --- | --- |
 | Anderson | `AndersonArleyC` | 215, 179, 743, 1584 |
+| José Quirós | `JoseQuiros30` | 72, 300, 134, 79 |
 
 > Antes de entregar, combine este contenido con el `README.md` general del grupo y agregue los demás integrantes.
 
@@ -62,8 +63,72 @@ Familia: grafos — árbol de recubrimiento mínimo (Prim)
 Código: [`min-cost-to-connect-all-points/solution.py`](min-cost-to-connect-all-points/solution.py)  
 ![Accepted — Min Cost to Connect All Points](evidencias/min-cost-to-connect-all-points-accepted.jpg)
 
+## 5. [72. Edit Distance](https://leetcode.com/problems/edit-distance/)
+
+Autor: José Quirós (`JoseQuiros30`)
+
+Usuario de LeetCode: `JoseQuiros30`
+
+Familia: programación dinámica
+
+**Idea.** El estado `dp[i][j]` guarda el mínimo de ediciones para transformar los primeros `i` caracteres de `word1` en los primeros `j` de `word2`. Las bases son `dp[i][0] = i` y `dp[0][j] = j`. Si los caracteres finales coinciden se conserva `dp[i-1][j-1]`; de lo contrario, se suma uno al mínimo entre borrar, insertar y sustituir.
+
+**Complejidad.** Con `n = len(word1)` y `m = len(word2)`, tiempo `Theta(nm)` y espacio `Theta(nm)`.
+
+Código: [`edit-distance/solution.py`](edit-distance/solution.py)
+
+Evidencia pendiente: `evidencias/edit-distance-accepted.png`
+
+## 6. [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
+
+Autor: José Quirós (`JoseQuiros30`)
+
+Usuario de LeetCode: `JoseQuiros30`
+
+Familia: programación dinámica
+
+**Idea.** El estado `dp[i]` es la longitud de la subsecuencia estrictamente creciente más larga que termina en `i`, con base `dp[i] = 1`. Para cada `j < i` tal que `nums[j] < nums[i]`, se considera `dp[j] + 1`; la respuesta es el máximo de toda la tabla.
+
+**Complejidad.** Para `n = len(nums)`, tiempo `Theta(n^2)` y espacio `Theta(n)`.
+
+Código: [`longest-increasing-subsequence/solution.py`](longest-increasing-subsequence/solution.py)
+
+Evidencia pendiente: `evidencias/longest-increasing-subsequence-accepted.png`
+
+## 7. [134. Gas Station](https://leetcode.com/problems/gas-station/)
+
+Autor: José Quirós (`JoseQuiros30`)
+
+Usuario de LeetCode: `JoseQuiros30`
+
+Familia: greedy
+
+**Idea.** Se recorre el circuito acumulando `gas[i] - cost[i]`. Si el tanque del candidato queda negativo en `i`, ninguna estación del tramo entre ese candidato e `i` puede servir, por lo que se descarta todo el tramo y el siguiente candidato es `i + 1`. Si el balance total es negativo, no existe solución.
+
+**Complejidad.** Para `n = len(gas)`, tiempo `Theta(n)` y espacio extra `Theta(1)`.
+
+Código: [`gas-station/solution.py`](gas-station/solution.py)
+
+Evidencia pendiente: `evidencias/gas-station-accepted.png`
+
+## 8. [79. Word Search](https://leetcode.com/problems/word-search/)
+
+Autor: José Quirós (`JoseQuiros30`)
+
+Usuario de LeetCode: `JoseQuiros30`
+
+Familia: backtracking
+
+**Idea.** Desde cada celda que pueda iniciar la palabra se elige un vecino ortogonal que coincida con la siguiente letra. La celda elegida se marca temporalmente para impedir reutilizarla y se restaura al regresar, permitiendo explorar las demás ramas.
+
+**Complejidad.** En una grilla de `m x n` y para una palabra de longitud `L`, el peor caso es `O(mn * 4^L)` en tiempo y `O(L)` en espacio para la pila recursiva.
+
+Código: [`word-search/solution.py`](word-search/solution.py)
+
+Evidencia pendiente: `evidencias/word-search-accepted.png`
+
 ## Evidencias
 
-Las capturas muestran el número o título del problema, el resultado `Accepted`, todos los casos aprobados, runtime, memoria y el usuario de LeetCode de Anderson.
+Las capturas disponibles de los ejercicios 1 a 4 muestran el número o título del problema, el resultado `Accepted`, todos los casos aprobados, runtime, memoria y el usuario de LeetCode de Anderson. Faltan las capturas de los ejercicios 5 a 8, que deben mostrar el usuario de LeetCode `JoseQuiros30`.
 
 
