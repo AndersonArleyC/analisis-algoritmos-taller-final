@@ -6,8 +6,8 @@ Curso: Análisis de algoritmos · ITM · 2026-2
 
 | Integrante | Usuario de Git | Ejercicios |
 | --- | --- | --- |
-| Anderson | `AndersonArleyC` | 215, 179, 743, 1584 |
-| José Quirós | `JoseQuiros30` | 72, 300, 134, 79 |
+| Anderson Arley Cano Osorio | `AndersonArleyC` | 215, 179, 743, 1584 |
+| José Ricardo Quirós Garcia | `JoseQuiros30` | 72, 300, 134, 79 |
 
 ## 1. [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 
